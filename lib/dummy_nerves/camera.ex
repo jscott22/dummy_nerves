@@ -1,7 +1,8 @@
 defmodule DummyNerves.Camera do
 
   def next_frame() do
-    "Dummy Image"
+    Path.expand('../../static/dummy.png', __DIR__)
+    |> File.read!()
   end
   
 end
