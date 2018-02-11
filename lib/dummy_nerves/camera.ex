@@ -4,5 +4,9 @@ defmodule DummyNerves.Camera do
     Path.expand('../../static/dummy.png', __DIR__)
     |> File.read!()
   end
+
+  def set_size(_width, _height) do
+    :ok
+  end
   
 end
